@@ -1,11 +1,11 @@
 {
-    "name": "vitalybaev/laravel5-dkim",
-    "description": "Laravel 5 package for signing outgoing messages with DKIM.",
+    "name": "mlouis/laravel5-dkim",
+    "description": "Fork from vitalybaev/laravel5-dkim Laravel 5 package for signing outgoing messages with DKIM.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vitaly Baev",
-            "email": "dj@vitalybaev.ru"
+            "name": "Miguel Louis",
+            "email": "contact@miguel-web.fr"
         }
     ],
     "require": {
