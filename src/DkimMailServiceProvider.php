@@ -15,6 +15,8 @@ class DkimMailServiceProvider extends MailServiceProvider
     {
         parent::registerSwiftMailer();
 
+        parent::registerMarkdownRenderer();
+
         $this->app->singleton('mailer', function ($app) {
             // Once we have create the mailer instance, we will set a container instance
             // on the mailer. This allows us to resolve mailer classes via containers
@@ -24,7 +26,7 @@ class DkimMailServiceProvider extends MailServiceProvider
             );
 
             $mailer->setQueue(app('queue'));
-            
+
             if (method_exists($this, 'setMailerDependencies')) {
                 $this->setMailerDependencies($mailer, $app);
             }
